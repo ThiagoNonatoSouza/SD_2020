@@ -35,5 +35,5 @@ class SDiretorio(rpyc.Service):
 if __name__ == "__main__":
     ListaDiretorio = {}
     print(f"Iniciando servidor de diretórios na porta: {PORTDIR}")
-    SDiretorio = ThreadedServer(SDiretorio(ListaDir), port=12307)
+    SDiretorio = ThreadedServer(SDiretorio(ListaDiretorio), port=12307)
     SDiretorio.start()
