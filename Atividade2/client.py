@@ -6,9 +6,9 @@ class Client:
   
   conn = rpyc.connect(SDIRETORIO, PORTDIR) # Connect to the server
   
-  print(f"Fazendo busca de Pizzaria")
+  print(f"Fazendo busca de Fibra")
   
-  nomeDir  =  conn.root.exposed_buscaServer('Pizzaria')
+  nomeDir  =  conn.root.exposed_buscaServer('Fibra')
   
   print(f"Busca finalizada, resultado: ")
   print(nomeDir) # Print the result
